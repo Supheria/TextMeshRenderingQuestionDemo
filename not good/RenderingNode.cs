@@ -68,6 +68,12 @@ public sealed partial class RenderingNode : Node3D
             var instance = TextInstances[index];
             RenderingServer.InstanceSetBase(instance, mesh);
             RenderingServer.InstanceSetScenario(instance, scenario);
+            var aabb = new Aabb()
+            {
+                Position = cell.Center,
+                Size = new Vector3(10, 10, 10)
+            };
+            RenderingServer.InstanceSetCustomAabb(instance, aabb);
             // var transform = Transform3D.Identity.Translated(cell.Center);
             // RenderingServer.InstanceSetTransform(instance, transform);
         }

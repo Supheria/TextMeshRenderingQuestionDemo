@@ -1,5 +1,11 @@
 # TextMeshRenderingQuestionDemo
 
+## Solution
+
+Reset AABB and everything work normal.
+
+more information: [Is there a way to make transform in shader effecting Mesh's vertices position in World3d? - Help / Shaders - Godot Forum](https://forum.godotengine.org/t/is-there-a-way-to-make-transform-in-shader-effecting-meshs-vertices-position-in-world3d/125924)
+
 ## Godot version
 
 4.5.1 - mono stable / .Net9
